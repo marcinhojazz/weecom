@@ -1,0 +1,364 @@
+/* Estilos padrão para dispositivos com largura de tela maior que 1200px */
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;300;400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=K2D:wght@100;300;400;500;700;800&family=Kanit:wght@100;300;400;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Kanit', sans-serif;
+  list-style: none;
+  
+}
+
+.hero-section, .clients-section, .services-content {
+  padding: 0 16px;
+}
+
+body {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+/* Header */
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: transparent;
+}
+
+#hero {
+  background-image: url('/public/background-hero.png');
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: cover;
+}
+
+#hero button {
+  border-radius: 80px;
+  color: #ffffff;
+  background-color: #6C40E9;
+  font-size: 24px;
+  letter-spacing: 4px;
+  padding: 12px 32px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  justify-content: center;
+  border: none;
+  margin-top: 20px;
+  margin-bottom: 32px;
+  align-self: flex-end;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.desktop-nav .nav-list {
+  list-style: none;
+  display: flex;
+}
+
+.desktop-nav .nav-item {
+  margin-right: 20px;
+}
+
+.desktop-nav .nav-link {
+  text-decoration: none;
+  color: inherit;
+  padding: 5px 10px;
+}
+
+.mobile-nav {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: gray;
+  border: 1px solid #ccc;
+}
+
+.mobile-nav .mobile-nav-list {
+  display: none;
+  flex-direction: column;
+}
+
+.menu-button {
+  display: none; /* Oculta o botão por padrão */
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/* Hero Section */
+.hero-section .container-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* About Us Section */
+.about-section .content-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Clients Section */
+.clients-section .clients-logos {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Services Section */
+.services-section .services-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Testimonials Section */
+.testimonials .carousel-wrapper {
+  overflow: hidden;
+}
+
+/* Call to Action Section */
+.call2 .cta-text {
+  text-align: center;
+}
+
+
+#hero {
+  height: 522px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.headline {
+  font-family: 'K2D', sans-serif;
+  font-size: 36px;
+  padding-bottom: 16px;
+  font-weight: 800;
+}
+
+.color-headline {
+  color: #CFFF11;
+  font-family: 'K2D', sans-serif;
+}
+
+.headline-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.subheadline {
+  font-family: 'K2D', sans-serif;
+  font-size: 36px;
+  font-weight: 300;
+  text-align: right;
+}
+
+.text-call-hero {
+  font-family: 'K2D', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: right;
+  width: 100%;
+}
+
+.about-section {
+  flex-direction: column;
+  display: flex;
+  color: #333333;
+  background-color: white;
+  background-image: linear-gradient(0deg, transparent 94%, rgba(0,0,0,0.1) 94%, rgba(0,0,0,0.1) 100%), linear-gradient(90deg, transparent 94%, rgba(0,0,0,0.1) 94%, rgba(0,0,0,0.1) 100%);
+  background-size: 48px 48px;
+  padding-bottom: 32px;
+}
+
+.about-section h2 {
+  padding: 36px 52px;
+}
+
+.about-section img {
+  /* display: block; */
+  margin: 0 auto;
+  padding-bottom: 36px;
+}
+
+.clients-section {
+  background-color: white;
+  color: #333333;
+}
+
+.clients-section h2 {
+  padding: 32px 0;
+  text-align: center;
+}
+
+.clients-logos {
+}
+
+#services {
+  background-color: #020012;
+  height: 100%;
+}
+
+.services-content {
+  display: flex;
+  justify-content: center;
+}
+
+.services-links {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+}
+
+.services-link {
+  color: #CFFF11;
+  
+  list-style: none;
+  border: 2px solid gainsboro; /* Definindo uma borda transparente */
+  background: linear-gradient(to bottom, rgba(183, 183, 183, 0.13), rgba(220, 220, 220, 0.13));
+
+  display: inline-block;
+  text-decoration: none;
+  padding: 26px 42px;
+  margin: 8px 0;
+  border-radius: 30px;
+  background-color: rgba(166, 129, 242, 0.2);
+
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.logo-clients {
+  display: flex;
+  gap: 4rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0 32px 52px 32px;
+
+}
+
+.services-stats {
+  display: flex;
+  border: 1px solid red;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  padding-top: 54px;
+  padding-bottom: 126px;
+}
+
+.service-stat {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.number-stat {
+  font-size: 64px;
+}
+
+.text-stat {
+  font-size: 20px;
+}
+
+.box-project {
+  border: 1px solid red;
+  height: 300px;
+  background-image: url('/public/card1.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: static;
+}
+
+.box-project-items {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 0;
+}
+
+.box-project a {
+  border: 1px solid white;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  flex-direction: column;
+}
+
+footer .content-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Estilos para tablets ou dispositivos com largura de tela entre 768px e 1199px */
+@media (min-width: 768px) and (max-width: 1199px) {
+  body {
+    padding: 0 60px;
+  }
+}
+
+/* Estilos para dispositivos móveis ou dispositivos com largura de tela menor que 768px */
+@media (min-width: 768px) and (max-width: 1199px) {
+  body {
+    padding: 0 60px;
+  }
+}
+
+/* Estilos para dispositivos móveis ou dispositivos com largura de tela menor que 768px */
+@media (max-width: 768px) {
+  body {
+    padding: 0 0;
+  }
+
+  .desktop-nav {
+    display: none;
+  }
+
+  .menu-button {
+    display: block; /* Exibe o botão no tamanho de tela mobile */
+  }
+
+  .mobile-nav {
+    display: none; /* Oculta a navegação móvel por padrão */
+  }
+
+  .menu-button.active + .mobile-nav {
+    display: flex; /* Exibe a navegação móvel quando o botão "Menu" é clicado */
+  }
+
+  footer .content-top {
+    flex-direction: column;
+    align-items: center;
+  }
+}
